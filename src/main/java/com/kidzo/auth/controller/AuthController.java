@@ -104,12 +104,12 @@ public class AuthController {
 
     }
     
-    @PutMapping("/changePassword/{user_id}")
-    public ResponseEntity<?> updatePassword(@PathVariable(value = "user_id") Long id, @RequestBody SignUpDto user)
-    {
-    	User users = userRepository.findById(id).get();
-    	users.setPassword(user.getPassword());
-    	return new ResponseEntity<>("Password successfully", HttpStatus.OK);
-    }
+//    @PutMapping("/changePassword/{user_id}")
+//    public ResponseEntity<?> updatePassword(@PathVariable(value = "user_id") Long id, @RequestBody SignUpDto user)
+//    {
+//    	User users = userRepository.findById(id).get();
+//    	users.setPassword(user.getPassword());
+//    	return new ResponseEntity<>("Password successfully", HttpStatus.OK);
+//    }
 
 }
